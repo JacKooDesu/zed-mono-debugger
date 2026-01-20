@@ -1,0 +1,10 @@
+id = "monodbg"
+name = "MonoDbg"
+version = "1.0.0"
+schema_version = 1
+authors = ["jackoo"]
+description = "MonoDbg debugger extension for .NET applications"
+repository = "https://github.com/JacKooDesu/zed-mono-debugger"
+
+[debug_adapters.monodbg]
+schema_path = "debug_adapter_schemas/monodbg.json"
