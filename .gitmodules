@@ -1,0 +1,3 @@
+[submodule "csharp/Mono.Debugger"]
+	path = csharp/Mono.Debugger
+	url = https://github.com/JaneySprings/Mono.Debugger.git
