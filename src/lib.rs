@@ -1,5 +1,6 @@
 mod mono;
 mod mono_debug_entry;
+mod utils;
 
 use mono::types::DebuggerOptions;
 use std::collections::HashMap;
