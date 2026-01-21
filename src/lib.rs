@@ -1,5 +1,6 @@
 mod mono;
 mod mono_debug_entry;
+mod utils;
 
 use mono::types::DebuggerOptions;
 use std::collections::HashMap;
@@ -89,7 +90,6 @@ impl zed::Extension for MonoDebugExtension {
         _user_provided_debug_adapter_path: Option<String>,
         worktree: &Worktree,
     ) -> zed::Result<DebugAdapterBinary, String> {
-        self.entry = mono_debug_entry::MonoDebugEntry::new();
         let path = self
             .entry
             .get_binary_path()
